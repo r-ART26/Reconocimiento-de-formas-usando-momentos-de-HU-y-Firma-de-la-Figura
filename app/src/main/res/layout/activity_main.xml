@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identificador de Figuras"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Selector descriptor con etiqueta -->
+        <TextView
+            android:id="@+id/label_descriptor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elija descriptor:"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_descriptor"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Texto dinámico que muestra cuál descriptor está seleccionado -->
+        <TextView
+            android:id="@+id/text_selected_descriptor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descriptor seleccionado: ---"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Área de dibujo -->
+        <com.example.app.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:background="@drawable/draw_area_background"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp" />
+
+        <!-- Botones alineados horizontalmente -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/button_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clasificar"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Resultado destacado -->
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: ---"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>
