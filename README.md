@@ -36,40 +36,47 @@ La aplicación está compuesta por dos partes principales: el frontend móvil de
 
 Este enfoque permite combinar la facilidad del desarrollo móvil en Android con la eficiencia de procesamiento de imágenes en C++.
 
+## 🚀 Instalación rápida
+
+Si deseas clonar y ejecutar el proyecto localmente:
+
+```bash
+git clone https://github.com/r-ART26/Reconocimiento-de-formas-usando-momentos-de-HU-y-Firma-de-la-Figura.git
+```
+
 ## 🗂️ Estructura del proyecto
 
 A continuación se muestra la estructura principal del proyecto Android, organizada por módulos y carpetas clave:
 
-app
-├── assets
+```text
+app/
+├── assets/
 │   ├── hu_moments_reference.csv
 │   └── shape_signature_reference.csv
-├── cpp
+├── cpp/
 │   ├── CMakeLists.txt
 │   └── native-lib.cpp
-├── java
-│   └── com
-│       └── example
-│           └── app
-│               ├── DrawingView.java
-│               └── MainActivity.java
-└── res
-    ├── drawable
+├── java/
+│   └── com/example/app/
+│       ├── DrawingView.java
+│       └── MainActivity.java
+└── res/
+    ├── drawable/
     │   ├── draw_area_background.xml
     │   ├── ic_launcher_background.xml
     │   └── ic_launcher_foreground.xml
-    ├── layout
+    ├── layout/
     │   └── activity_main.xml
-    ├── values
+    ├── values/
     │   ├── colors.xml
     │   ├── strings.xml
     │   └── themes.xml
-    ├── values-night
+    ├── values-night/
     │   └── themes.xml
-    └── xml
+    └── xml/
         ├── backup_rules.xml
         └── data_extraction_rules.xml
-
+```
 
 ## 🛠️ Requisitos del sistema y herramientas necesarias
 
