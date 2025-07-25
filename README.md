@@ -39,35 +39,37 @@ Este enfoque permite combinar la facilidad del desarrollo móvil en Android con 
 ## 🗂️ Estructura del proyecto
 
 A continuación se muestra la estructura principal del proyecto Android, organizada por módulos y carpetas clave:
+
 app
 ├── assets
-│   ├── hu_moments_reference.csv
-│   └── shape_signature_reference.csv
+│   ├── hu_moments_reference.csv
+│   └── shape_signature_reference.csv
 ├── cpp
-│   ├── CMakeLists.txt
-│   └── native-lib.cpp
+│   ├── CMakeLists.txt
+│   └── native-lib.cpp
 ├── java
-│   └── com
-│       └── example
-│           └── app
-│               ├── DrawingView.java
-│               └── MainActivity.java
+│   └── com
+│       └── example
+│           └── app
+│               ├── DrawingView.java
+│               └── MainActivity.java
 └── res
     ├── drawable
-    │   ├── draw_area_background.xml
-    │   ├── ic_launcher_background.xml
-    │   └── ic_launcher_foreground.xml
+    │   ├── draw_area_background.xml
+    │   ├── ic_launcher_background.xml
+    │   └── ic_launcher_foreground.xml
     ├── layout
-    │   └── activity_main.xml
+    │   └── activity_main.xml
     ├── values
-    │   ├── colors.xml
-    │   ├── strings.xml
-    │   └── themes.xml
+    │   ├── colors.xml
+    │   ├── strings.xml
+    │   └── themes.xml
     ├── values-night
-    │   └── themes.xml
+    │   └── themes.xml
     └── xml
         ├── backup_rules.xml
         └── data_extraction_rules.xml
+
 
 ## 🛠️ Requisitos del sistema y herramientas necesarias
 
